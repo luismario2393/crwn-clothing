@@ -61,7 +61,7 @@ export function* isUserAuthenticated() {
   }
 }
 
-export function* signUp({ payload: email, password, displayName }) {
+export function* signUp({ payload: { email, password, displayName } }) {
   try {
     const { user } = yield call(
       createAuthUserWithEmailAndPassword,
