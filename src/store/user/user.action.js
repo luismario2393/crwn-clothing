@@ -44,3 +44,12 @@ export const signUpSuccess = (user, additionalDetails) =>
 
 export const signUpFailed = (error) =>
   createActions(USER_ACTION_TYPES.SIGN_UP_FAILED, error);
+
+export const signOutStart = () =>
+  createActions(USER_ACTION_TYPES.SIGN_OUT_START);
+
+export const signOutSuccess = () =>
+  createActions(USER_ACTION_TYPES.SIGN_OUT_SUCCESS);
+
+export const signOutFailed = (error) =>
+  createActions(USER_ACTION_TYPES.SIGN_OUT_FAILED, error);
